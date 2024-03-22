@@ -1,3 +1,9 @@
+// $(window).on('load', function() {
+//   document.querySelectorAll("input[type=radio]").forEach(
+//     (i) => (i.checked = false)
+//   );
+// })
+
 // binding submit button to click event, to fire entire script
 $('button').on('click', function(){
     // creating personality trait counters and setting them to zero
@@ -99,9 +105,15 @@ $('button').on('click', function(){
         } else {
             output = output + descriptions[7];
         }
-    
-    // Adding the final content that was built to the container (#result) div
-    container.html('<h2>Your Personality Type Is:  ' + type.join(' ') + '</h2>' + output);
+
+      if (document.querySelectorAll(":checked").length < 20) {
+        container.html("<h2 style='color:red;'>Please Answer all Questions</h2>");
+      } else {
+        // Adding the final content that was built to the container (#result) div
+        container.html(
+          "<h2>Your Personality Type Is: </h2><h1 class='typeh1'>" + type.join(" ") + "</h1>" + output
+        );
+      }
     } // end of for loop and if/else if/else statement
 
     // used for testing
