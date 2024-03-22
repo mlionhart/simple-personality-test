@@ -1,8 +1,8 @@
-// $(window).on('load', function() {
-//   document.querySelectorAll("input[type=radio]").forEach(
-//     (i) => (i.checked = false)
-//   );
-// })
+$(window).on('load', function() {
+  document.querySelectorAll("input[type=radio]").forEach(
+    (i) => (i.checked = false)
+  );
+})
 
 // binding submit button to click event, to fire entire script
 $('button').on('click', function(){
