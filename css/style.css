@@ -98,6 +98,10 @@ p {
 }
 
 @media (max-width: 1000px) {
+  #pagewrapper {
+    max-width: 90%;
+  }
+
   p {
     flex-flow: column wrap;
     /* width: calc(100vw - 10px);
@@ -105,12 +109,12 @@ p {
   }
 
   #form {
-    /* width: calc(100vw - 10px); */
+    display: block;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   body {
-    width: 90%;
     margin: 0 auto;
   }
 
@@ -129,9 +133,10 @@ p {
 
   #submit {
     display: block;
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
-    font-size: medium;
+    font-size: xx-large;
+    padding: 13px;
     font-weight: bold;
   }
 
