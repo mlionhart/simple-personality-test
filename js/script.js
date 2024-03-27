@@ -69,14 +69,46 @@ $('button').on('click', function(){
 
     // container for short trait descriptions
     const descriptions = [
-        [`<p><strong>Introverted: </strong>You are energized by thoughts and ideas  </p>`],
-        [`<p><strong>Extraverted: </strong>You are energized by action and socializing </p>`],
-        [`<p><strong>Sensing: </strong>You are down-to-earth, realistic and practical, and tend to live more in the present  </p>`],
-        [`<p><strong>Intuitive: </strong>You see the big picture and the possibilities, and you are more future-thinking  </p>`],
-        [`<p><strong>Thinking: </strong>  You make decisions based on logic and objective criteria</p>`],
-        [`<p><strong>Feeling: </strong>  You make decisions based more on your personal values</p>`],
-        [`<p><strong>Judging: </strong>  You like things to be settled and decided, and value living according to a schedule</p>`],
-        [`<p><strong>Perceiving: </strong>  You value freedom and spontaneity, and dislike overly rigid rules and guidelines</p>`]
+      [
+        `<p><strong>Introverted:&nbsp; </strong> You are energized by thoughts and ideas - ${Math.round(
+          (introvertCount / 5) * 100
+        )}%  </p>`,
+      ],
+      [
+        `<p><strong>Extraverted:&nbsp; </strong> You are energized by action and socializing - ${Math.round(
+          (extravertCount / 5) * 100
+        )}% </p>`,
+      ],
+      [
+        `<p><strong>Sensing:&nbsp; </strong>You are down-to-earth, realistic and practical, and tend to live more in the present - ${Math.round(
+          (sensorCount / 5) * 100
+        )}%  </p>`,
+      ],
+      [
+        `<p><strong>Intuitive:&nbsp; </strong>You see the big picture and the possibilities, and you are more future-thinking - ${Math.round(
+          (intuitiveCount / 5) * 100
+        )}%  </p>`,
+      ],
+      [
+        `<p><strong>Thinking:&nbsp; </strong>  You make decisions based on logic and objective criteria - ${Math.round(
+          (thinkerCount / 5) * 100
+        )}%</p>`,
+      ],
+      [
+        `<p><strong>Feeling:&nbsp; </strong>  You make decisions based more on your personal values - ${Math.round(
+          (feelerCount / 5) * 100
+        )}%</p>`,
+      ],
+      [
+        `<p><strong>Judging:&nbsp; </strong>  You like things to be settled and decided, and value living according to a schedule - ${Math.round(
+          (judgerCount / 5) * 100
+        )}%</p>`,
+      ],
+      [
+        `<p><strong>Perceiving:&nbsp; </strong>  You value freedom and spontaneity, and dislike overly rigid rules and guidelines - ${Math.round(
+          (perceiverCount / 5) * 100
+        )}%</p>`,
+      ],
     ];
 
     // getting a handle on the #result div, to hold the personality type and trait descriptions
